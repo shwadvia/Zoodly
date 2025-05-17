@@ -1,0 +1,96 @@
+<?php
+// إعدادات التواصل والربح
+$whatsapp = "201027662232"; // رقم واتساب
+$profit_percentage = 0.10; // نسبتك في الربح (10%)
+?>
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <title>خدمات التزويد والشحن</title>
+    <style>
+        body {
+            background-color: #000;
+            color: #fff;
+            font-family: 'Tahoma', sans-serif;
+            text-align: center;
+            padding: 40px;
+        }
+        .service-box {
+            border: 1px solid #444;
+            background-color: #111;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px auto;
+            width: 80%;
+            max-width: 600px;
+        }
+        h1 {
+            color: #0f0;
+        }
+        h3 {
+            color: gold;
+        }
+        p {
+            color: #ccc;
+        }
+        .button {
+            padding: 10px 20px;
+            background-color: gold;
+            color: #000;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            display: inline-block;
+            margin-top: 10px;
+        }
+        .whatsapp-button {
+            background-color: #25D366;
+            color: #000;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>🚀 خدمات تزويد السوشيال ميديا وشحن الألعاب</h1>
+    <p>أكتر من 350 خدمة! من بابجي، فري فاير، كونكر، ولف تيم، شحن رصيد، متابعين، لايكات وغيرهم!</p>
+
+    <!-- شحن UC بابجي -->
+    <div class="service-box">
+        <h3>شحن UC بابجي</h3>
+        <p>السعر الأساسي: 50 جنيه</p>
+        <p>السعر للعميل: <?php echo 50 + (50 * $profit_percentage); ?> جنيه</p>
+        <a href="https://wa.me/<?php echo $whatsapp; ?>?text=مرحباً، أرغب في شحن UC بابجي ✅" class="button">اطلب الآن</a>
+    </div>
+
+    <!-- شحن فري فاير -->
+    <div class="service-box">
+        <h3>شحن فري فاير</h3>
+        <p>السعر الأساسي: 30 جنيه</p>
+        <p>السعر للعميل: <?php echo 30 + (30 * $profit_percentage); ?> جنيه</p>
+        <a href="https://wa.me/<?php echo $whatsapp; ?>?text=مرحباً، أرغب في شحن فري فاير 🔥" class="button">اطلب الآن</a>
+    </div>
+
+    <!-- شحن كونكر -->
+    <div class="service-box">
+        <h3>شحن كونكر</h3>
+        <p>السعر الأساسي: 60 جنيه</p>
+        <p>السعر للعميل: <?php echo 60 + (60 * $profit_percentage); ?> جنيه</p>
+        <a href="https://wa.me/<?php echo $whatsapp; ?>?text=مرحباً، أرغب في شحن كونكر 🎮" class="button">اطلب الآن</a>
+    </div>
+
+    <!-- تواصل مباشر -->
+    <p>
+        <a href="https://wa.me/<?php echo $whatsapp; ?>" class="button whatsapp-button">📞 تواصل واتساب مباشر</a>
+    </p>
+
+</body>
+</html>
+
+    <p>
+        <a href="https://wa.me/<?php echo $whatsapp; ?>" class="button whatsapp-button">📞 تواصل واتساب مباشر</a>
+    </p>
+
+</body>
+</html>
